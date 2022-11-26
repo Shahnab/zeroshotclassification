@@ -475,21 +475,7 @@ elif selected == "Unlocked Mode":
 elif selected == "Batch Mode":
 
     st.write('Upload csv file with a single column containing texts for classification')
-    with st.spinner('Please wait for the model to load...'):
-        classifier = pipeline('zero-shot-classification')
-    st.info('Classifier pipeline is built')
-        
-    uploaded_file = st.file_uploader("Choose a file, please upload only csv files")
-    form = st.form(key='zeroclassifier_form')
-    labels = form.text_input(label='Labels')
-    submit_button = form.form_submit_button(label='Submit')
-    
-    if submit_button:
-        df1=pd.read_csv(uploaded_file)
-        labs = labels.title().split(',')
-        df1['label'] = df1['text'].apply(lambda x: classifier(x, labs)['labels'][0])
-        df1['score'] = df1['text'].apply(lambda x: classifier(x, labs)['scores'][0])
-        st.dataframe(df1)
+    st.warning("Kindly contact admin for access")
 
 
 if __name__ == "__main__":
