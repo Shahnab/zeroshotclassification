@@ -90,7 +90,7 @@ with st.sidebar:
         default_index=0,
     )
 st.sidebar.caption("Powered by")
-st.sidebar.image('https://assets.stickpng.com/images/6308b84661b3e2a522f01468.png', width=150)
+st.sidebar.image('icons.png', width=150)
 
 
 #######################################################
