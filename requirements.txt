@@ -6,3 +6,4 @@ transformers
 tensorflow
 pandas
 keras
+keras.saving.hdf5_format
