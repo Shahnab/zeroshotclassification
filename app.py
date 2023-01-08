@@ -62,6 +62,7 @@ be created for text classification
 """
 )
 
+st.sidebar.image("https://cdn.freebiesupply.com/logos/large/2x/tencent-video-logo-png-transparent.png", width=100)
 st.sidebar.subheader('About Zero Shot Classification')
 st.sidebar.markdown(
     """
@@ -77,7 +78,7 @@ A zero-shot model allows us to classify data that has not been previously used t
 st.write("")
 
 st.sidebar.subheader("Selection Panel")
-st.sidebar.image("https://cdn.freebiesupply.com/logos/large/2x/tencent-video-logo-png-transparent.png", width=100)
+
 
 #######################################################
 
